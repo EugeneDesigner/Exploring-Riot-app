@@ -1,0 +1,30 @@
+{
+  "name": "stockmarket",
+  "version": "1.0.0",
+  "description": "riot.js stockmarket sample with npm and es6",
+  "main": "index.js",
+  "scripts": {
+    "compile": "riot --type es6 app dist",
+    "watch": "riot -w --type es6 app dist",
+    "browsersync": "browser-sync start --server --files 'dist/**/*.js, app/*.html' --startPath app",
+    "serve": "parallelshell 'node main.js' 'npm run watch' 'npm run browsersync'"
+  },
+  "dependencies": {
+    "babel-core": "^6.18.2",
+    "babel-preset-es2015-riot": "^1.1.0",
+    "bootstrap": "^3.3.7",
+    "d3": "^4.4.0",
+    "fast-json-patch": "^1.1.2",
+    "riot": "^3.0.1",
+    "riot-route": "^3.0.2",
+    "streamdataio-js-sdk": "^1.0.5"
+  },
+  "devDependencies": {
+    "babel-plugin-external-helpers-2": "^6.3.13",
+    "browser-sync": "^2.18.2",
+    "parallelshell": "^2.0.0"
+  },
+  "github": "https://github.com/EugeneDesigner/Exploring-Riot-app",
+  "author": "Eugene",
+  "license": "ISC"
+}

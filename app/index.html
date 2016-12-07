@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Riotjs app sample</title>
+
+        <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/stockmarket-barchart.css" />
+    </head>
+    <body>
+        <!-- mount point -->
+
+        <nav class="navbar navbar-light bg-faded">
+            <ul class="nav navbar-nav">
+              <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="#stockmarket" class="nav-link">Stock Market</a></li>
+              <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+
+
+            </ul>
+        </nav>
+
+        <div id="content"></div>
+        <!-- <stockmarket-table></stockmarket-table>
+        <stockmarket-barchart height="500" width="960"></stockmarket-barchart> -->
+
+        <script src="../node_modules/riot/riot.min.js"></script>
+          <script src="../node_modules/riot-route/dist/route.min.js"></script>
+        <script src="../node_modules/d3/build/d3.min.js"></script>
+        <script src="../node_modules/streamdataio-js-sdk/dist/streamdataio.min.js">></script>
+        <script src="../node_modules/fast-json-patch/dist/json-patch-duplex.min.js"></script>
+        <script src="../dist/js/Stockmarket/stockmarket-table.js"></script>
+        <script src="../dist/js/Stockmarket/stockmarket-barchart.js"></script>
+        <script src="../dist/js/About/about-page.js"></script>
+        <script src="./js/About/about.js"></script>
+        <script src="../dist/js/Homepage/home-page.js"></script>
+        <script src="./js/Homepage/home.js"></script>
+        <script src="./js/Stockmarket/stockmarket.js"></script>
+        <script src="./js/Stockmarket/stockmarket-service.js"></script>
+        <script src="../dist/js/Stockmarket/stockmarket-table.js"></script>
+        <script src="../dist/js/Stockmarket/stockmarket-barchart.js"></script>
+        <script src="./routes.js"></script>
+
+        <script>
+            riot.mount('*')
+            riot.route.exec(handler)
+
+
+        </script>
+    </body>
+</html>

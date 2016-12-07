@@ -1,0 +1,16 @@
+.bar {
+    fill: steelblue;
+    margin: 0 5px;
+}
+
+.bar:hover {
+    fill: brown;
+}
+
+.axis {
+    font: 10px sans-serif;
+}
+
+.axis path {
+    shape-rendering: crispEdges;
+}
